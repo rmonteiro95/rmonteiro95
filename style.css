@@ -1,59 +1,25 @@
-*{
-    box-sizing: border-box;
-/*    display: table;*/
+body, h1,h2,h3,h4,h5,h6 {
+    font-family: "Montserrat", sans-serif
 }
-body{
-    margin: 0;
-    font-family: sans-serif;
+.w3-row-padding img {
+    margin-bottom: 12px
 }
-.menuPrincipal {
-    overflow: hidden;
-    background-color: #333;
-    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {
+    width: 120px;
+    background: #222;
 }
-.menuPrincipal a {
-    float: right;
-    display: inline;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 24px 46px;
-    text-decoration: none;
-    transition: 0.5s;
-    font-size: 13px;
-    width: 15%;
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {
+    margin-left: 120px
 }
-.menuPrincipal a:hover{
-    background-color: whitesmoke;
-    color:black;
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {
+    #main {margin-left: 0}
 }
-.imgSlide{
-    max-width: 100%;
-    height: auto;
-    position:relative;
-    display: none;
-}
-.flechaE, .flechaD{
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    color: white;
-    font-weight: bold;
-    font-size: 50px;
-    transition: 0.5s;
-}
-.flechaE{
-    left: 10%;
-}
-.flechaD{
-    left: 90%;
-}
-.flechaE:hover{
-    left: 9.5%;
-}
-.flechaD:hover{
-    left: 90.5%;
-}
-.fade{    
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
+/*
+.testeTitulo{
+    position: absolute; 
+    top: 50%; 
+    right: 25%;
+}*/
